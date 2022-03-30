@@ -1,0 +1,465 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./../../Typo-FarFromHomecoming.woff2');
+}
+
+@font-face {
+    font-family: "far_from_homecomingregular";
+    src:url('./../../Far-From\ Homecoming\ Updated.otf')
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    font-family: "far_from_homecomingregular";
+}
+
+:root {
+    --primary-page-color: #114C92;
+    --secondary-page-color: #B11313;
+    --primary-ad-black: #000;
+}
+
+.separator {
+    clear: both;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*****************/
+/* HEADER        */
+
+header {
+    color: white;
+    background: var(--primary-page-color);
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header .container .logo img {
+    margin: 10px 10px 0 10px;
+}
+
+header .container .logo img.x {
+    margin: 20px 10px 10px 10px;
+}
+
+header .container nav {
+    width: 55%;
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-size: 20px;
+
+}
+
+
+
+/**********************/
+/* FOOTER             */
+
+footer {
+    background: var(--primary-ad-black);
+    padding: 30px 0;
+}
+
+footer img {
+    margin: 0 5px;
+}
+
+footer .footer-top ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer .footer-top ul.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer select {
+    background: var(--primary-page-color);
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Montserrat";
+}
+
+footer .footer-bottom li {
+    color: var(--primary-page-color);
+    font-size: 30px;
+    margin: 5px 4px;
+}
+
+footer .footer-bottom ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .footer-bottom {
+    width: 25%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer select#langue,
+footer ul#logo {
+    display: none;
+}
+
+/******************* */
+/* Responsive footer and header */
+
+@media (max-width:768px) {
+    header {
+        display: none;
+    }
+
+    footer {
+        overflow: hidden;
+    }
+
+    footer .footer-bottom {
+        display: none;
+    }
+
+    footer .responsive-left ul.logo,
+    footer .responsive-left select {
+        display: none;
+    }
+
+    footer .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer ul.responsive-left {
+        flex: none;
+        display: block;
+        float: left;
+    }
+
+    footer .responsive-left li {
+        margin: -1rem;
+    }
+
+    footer select#langue {
+        display: block;
+        float: right;
+        margin: 1.2rem 0;
+    }
+
+    footer ul#logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+/* Main part */
+
+
+.section-1 .logo {
+    display: none;
+}
+
+.section-1 {
+    position: relative;
+}
+
+.section-1 h1.title {
+    font-family:  "far_from_homecomingregular";
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+
+.section-1 .subtitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    margin: 0.1rem;
+}
+
+/* section 2 */
+
+.section-2 {
+    background: var(--primary-page-color);
+    font-family: "Montserrat";
+    color: white;
+    text-align: justify;
+
+}
+
+.section-2 .container {
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.section-2 .article {
+    width: 40%;
+}
+
+.section-2 .title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.section-2 .video {
+    width: 60%;
+    height: 400px;
+}
+
+/* section 3 */
+
+.section-3 {
+    position: relative;
+}
+
+.section-3 h1.title {
+    font-family:  "far_from_homecomingregular";
+    font-size: 32px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+.section-3 .subtitle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    margin: 0.1rem;
+}
+
+.section-4 {
+    color: white;
+    background: var(--primary-page-color);
+    font-family: "Montserrat";
+    padding-bottom: 50px;
+    text-align: justify;
+
+}
+
+.section-4 .down .responsive-img{
+    display: none;
+}
+
+.section-4 .container {
+    width: 80%;
+}
+
+.section-4 .article {
+    margin: 8% auto 0 auto;
+    position: relative;
+}
+
+.section-4 div.images {
+    position: relative;
+}
+
+.section-4 .middle {
+    height: 400px;
+}
+
+
+.section-4 .middle .images .img-2 {
+    z-index: 2;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.section-4 .article .content {
+    position: absolute;
+    top: 15%;
+}
+
+
+.section-4 .down .images .same-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-4 .down .images img.img-3 {
+    position: absolute;
+    top: 95%;
+    left: 30%;
+}
+
+.section-5 {
+    background:var(--secondary-page-color);
+    overflow: hidden;
+    color: white;
+    font-family: "Montserrat";
+    text-align: justify;
+
+}
+
+.section-5 img {
+    float: right;
+}
+
+.section-5 .parent {
+    padding: 20px 10px;
+    width: 40%;
+    margin: auto;
+}
+
+.section-5 .parent img {
+    margin: 6px auto;
+}
+
+.section-5 .parent .col {
+    width: 50%;
+}
+
+.section-6 {
+    color: white;
+    position: relative;
+    font-family: "Montserrat";
+}
+
+.section-6 .content {
+    position: absolute;
+    top: 0%;
+    left: 55%;
+    background: var(--primary-page-color);
+    width: 35%;
+    height: 100%;
+    padding: 50px 20px;
+    text-align: justify;
+    opacity: 0.7;
+}
+
+.section-6 .title {
+    text-align: center;
+}
+
+.section-6 .subtitle {
+    text-align: right;
+}
+
+@media (max-width:768px) {
+    .section-1 .logo{
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+
+    .section-2 .row{
+        flex:none;
+        display: block;
+    }
+    
+    .section-2 .row .col{
+        width: 100%;
+        display: block;
+    }
+
+    .section-4{
+        margin-top: -43px;
+    }
+
+    .section-4 .row{
+        flex: none;
+        display: block;
+    }
+
+    .section-4 .row .col{
+        width: 100%;
+        display: block;
+    }
+
+    .section-4 .middle{
+        height: 500px;
+    }
+
+
+    .section-4 .middle div.images{
+        display: block;
+        position: initial;
+        margin-left: 25%;
+    }
+
+     .section-4 .middle img{
+        margin: 1rem auto 0 auto;
+        width: 70%;
+     }
+
+    .section-4 .middle .images .img-2 {
+        z-index: 0;
+        position:inherit;
+        
+    }
+
+    .section-4 .down{
+        margin-top:140px;
+    }
+
+    .section-4 .down div.images {
+        display: none;
+        position:inherit;
+    }
+
+    .section-4 .down .responsive-img{
+        display: flex;
+    }
+
+    .section-5, .section-6{
+        display: none;
+    }
+}

@@ -1,0 +1,478 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('./../Typo-FarFromHomecoming.woff2');
+}
+
+@font-face {
+    font-family: "far_from_homecomingregular";
+    src:url('./../../Far-From\ Homecoming\ Updated.otf')
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-page-color: #B11313;
+    --secondary-page-color: #114C92;
+    --primary-ad-black: #000;
+}
+
+.separator {
+    clear: both;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*****************/
+/* HEADER        */
+
+header {
+    color: white;
+    background: var(--primary-page-color);
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header .container .logo img {
+    margin: 10px 10px 0 10px;
+}
+
+header .container .logo img.x {
+    margin: 20px 10px 10px 10px;
+}
+
+header .container nav {
+    width: 55%;
+    margin-top: 25px;
+    font-family: "Montserrat";
+    font-size: 20px;
+
+}
+
+
+
+/**********************/
+/* FOOTER             */
+
+footer {
+    background: var(--primary-ad-black);
+    padding: 30px 0;
+}
+
+footer img {
+    margin: 0 5px;
+}
+
+footer .footer-top ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer .footer-top ul.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer select {
+    background: var(--primary-page-color);
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Montserrat";
+}
+
+footer .footer-bottom li {
+    color: var(--primary-page-color);
+    font-size: 30px;
+    margin: 5px 4px;
+}
+
+footer .footer-bottom ul {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .footer-bottom {
+    width: 25%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat";
+}
+
+footer select#langue, footer ul#logo{
+    display: none;
+}
+
+/******************* */
+/* Responsive footer and header */
+
+@media (max-width:768px) {
+    header{
+        display: none;
+    }
+
+    footer{
+        overflow: hidden;
+    }
+    footer  .footer-bottom{
+        display: none;
+    }
+
+    footer .responsive-left ul.logo, footer .responsive-left select{
+        display: none;
+    }
+
+    footer .footer-top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer ul.responsive-left{
+        flex: none;
+        display: block;
+        float: left;
+    }
+
+    footer .responsive-left li{
+        margin: -1rem;
+    }
+
+    footer select#langue{
+        display: block;
+        float: right;
+        margin:1.2rem 0;
+    }
+
+    footer ul#logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+/*****************/
+/*    Body       */
+
+/* section 1 */
+
+.section-1 {
+    position: relative;
+}
+
+.section-1 h1.title {
+    font-family: "far_from_homecomingregular";
+    font-size: 32px;
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    color: white;
+}
+
+.section-1 .buttons {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+}
+
+.section-1 .buttons button {
+    font-family: "Montserrat";
+    font-size: 14px;
+    margin: 0 18px;
+    border-radius: 15px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    width: 150px;
+}
+
+.btn-1 {
+    background: white;
+    color: var(--primary-page-color);
+}
+
+.btn-2 {
+    background: none;
+    color: white;
+}
+
+
+.section-1 .subtitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    margin: 0.1rem;
+}
+
+.section-1 p.announcment {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    margin: 0.1rem;
+}
+
+.section-1 .logo{
+    display: none;
+}
+/* SECTION 2 */
+
+.section-2 {
+    background: var(--primary-page-color);
+    font-family: "Montserrat";
+    color: white;
+}
+
+.section-2 .container {
+    margin: auto;
+}
+
+.section-2 .article {
+    margin: 10px 0 80px 0;
+}
+
+.section-2 .btn {
+    font-family: "Montserrat";
+    font-size: 14px;
+    margin: 0 18px;
+    border-radius: 15px;
+    height: 40px;
+    border: 1px solid white;
+    text-align: center;
+    width: 150px;
+    color: var(--primary-page-color);
+    background: white;
+    margin: 0 25%;
+}
+
+.section-2 .description {
+    margin: 2rem 0;
+}
+
+/* section 3*/
+
+.section-3 {
+    background: var(--secondary-page-color);
+    color: white;
+    position: relative;
+}
+
+.section-3 .become-spiderman {
+    position: absolute;
+    top: 15%;
+    right: 9%;
+    width: 40%;
+    text-align: center;
+}
+
+.section-3 form input {
+    display: block;
+    margin: 1rem auto;
+    height: 40px;
+    width: 80%;
+    border-radius: 40px;
+    border: 1px solid #000;
+    padding: 5px;
+    padding-left: 5%;
+    color: #000;
+}
+
+.section-3 form input.send {
+    height: 50px;
+    width: 170px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: white;
+    background: none;
+    text-align: center;
+    font-size: 15px;
+    padding: 0;
+}
+
+/* section 4 */
+
+.section-4 {
+    background: var(--primary-page-color);
+    color: white;
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.section-4 .img {
+    float: right;
+    margin-right: -60px;
+}
+
+.section-4 .newsletter {
+    position: absolute;
+    float: left;
+    margin-top: 80px;
+    margin-left: 70px;
+    width: 60%;
+}
+
+.section-4 form {
+    margin-top: 50px;
+}
+
+.section-4 form .input {
+    display: block;
+    margin: 1rem 0;
+    height: 30px;
+    width: 50%;
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 5px;
+    padding-left: 5%;
+    color: white;
+    background: none;
+}
+
+.section-4 form input.send {
+    display: block;
+    height: 30px;
+    width: 180px;
+    border: 1px solid white;
+    border-radius: 15px;
+    color: var(--primary-page-color);
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 3px;
+    margin: 60px 50px;
+}
+
+.section-4 form input.check{
+    margin:0.5rem ;
+}
+
+@media (max-width:768px){
+    .section-1 .logo{
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 0%;
+    }
+
+    .section-1 h1.title {
+        font-size:25px;
+    }
+
+    .section-1 .buttons button {
+        font-size: 14px;
+        margin: 0 10px;
+        border-radius: 10px;
+        height:40px;
+        width: 140px;
+    }
+
+    .section-1 .subtitle {
+        font-size: 25px;
+        top: 60%;
+        margin: 0.1rem;
+    }
+
+    .section-1 p.announcment {
+        left: 20%;
+    }
+
+    .section-2{
+        text-align: center;
+    }
+
+    .section-3 .become-spiderman {
+        position: absolute;
+        top: 15%;
+        width:70%;
+        right: 15%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .section-3 form input {
+        height: 35px;
+        width: 80%;
+    }
+
+    .section-3 form input.send {
+        border-radius:25px;
+    }
+
+    .section-4 .img {
+        width: 0.0001%;
+margin-right: 670px;
+margin-bottom: -130px;
+    }
+
+    .section-4 .newsletter {
+        float: none;
+        margin: 25px auto;
+        width: 70%;
+        text-align: center;
+    }
+
+    .section-4 form {
+        margin:100px auto 0 auto;
+        padding-left:1%;
+    }
+
+    .section-4 form .input{
+        margin-left:10%;
+    }
+
+    .section-4 form input.send {
+        margin:120px 0;
+        margin-left: 30%;
+    }
+
+    .section-4 form input.check{
+        margin:0.1rem ;
+        width: 20px;
+        height: 20px;
+    }
+}
