@@ -276,7 +276,11 @@ footer select#langue, footer ul#logo{
     margin: 10px 0 80px 0;
 }
 
-.section-2 .btn {
+.section-2 .row .col{
+    width: 50%;
+}
+
+.section-2 .button .btn {
     font-family: "Montserrat";
     font-size: 14px;
     margin: 0 18px;
@@ -284,14 +288,17 @@ footer select#langue, footer ul#logo{
     height: 40px;
     border: 1px solid white;
     text-align: center;
-    width: 150px;
     color: var(--primary-page-color);
     background: white;
-    margin: 0 25%;
+    margin:auto;
 }
 
 .section-2 .description {
     margin: 2rem 0;
+}
+
+.section-2 .article ul {
+    display:block;
 }
 
 /* section 3*/
