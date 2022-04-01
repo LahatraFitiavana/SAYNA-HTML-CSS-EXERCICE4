@@ -27,6 +27,19 @@ body {
     clear: both;
 }
 
+.title{
+    font-family: "far_from_homecomingregular";
+}
+
+.subtitle{
+    font-weight: bold;
+    font-family: "Montserrat";
+}
+
+p{
+    text-align: justify;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -253,7 +266,7 @@ footer select#langue, footer ul#logo{
     font-weight: bold;
     position: absolute;
     bottom: 1%;
-    left: 10%;
+    left:7%;
     margin: 0.1rem;
 }
 
@@ -276,22 +289,38 @@ footer select#langue, footer ul#logo{
     margin: 10px 0 80px 0;
 }
 
-.section-2 .row .col{
-    width: 50%;
-}
-
-.section-2 .button .btn {
+.section-2 .btn {
     font-family: "Montserrat";
     font-size: 14px;
-    margin: 0 18px;
+    margin:auto;
     border-radius: 15px;
     height: 40px;
+    width:150px;
     border: 1px solid white;
     text-align: center;
     color: var(--primary-page-color);
     background: white;
-    margin:auto;
 }
+
+.section-2 .buttons{
+    width: 100%;
+}
+.section-2 .buttons ul {
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+
+.section-2 .buttons li{
+    margin: auto;
+}
+.section-2 .buttons .btn-div{
+    margin: auto;
+}
+
+
 
 .section-2 .description {
     margin: 2rem 0;
@@ -299,6 +328,7 @@ footer select#langue, footer ul#logo{
 
 .section-2 .article ul {
     display:block;
+    list-style: initial;
 }
 
 /* section 3*/

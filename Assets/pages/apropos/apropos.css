@@ -17,6 +17,10 @@ body {
     margin: 0;
 }
 
+p{
+    text-align: justify;
+}
+
 .title{
     font-family: "far_from_homecomingregular";
 }
