@@ -1,3 +1,10 @@
+/* HARINASANDRATRA Lahatra Fitiavana 
+*
+* Watch out, there might be things on display none, they are to handle the responsive part of the page
+*/
+
+/* General css */
+
 @font-face {
     font-family: "Montserrat";
     src: url('./../Typo-FarFromHomecoming.woff2');
@@ -320,8 +327,6 @@ footer select#langue, footer ul#logo{
     margin: auto;
 }
 
-
-
 .section-2 .description {
     margin: 2rem 0;
 }
@@ -427,6 +432,8 @@ footer select#langue, footer ul#logo{
 .section-4 form input.check{
     margin:0.5rem ;
 }
+
+/* Responsive part of the main part of the page */
 
 @media (max-width:768px){
     .section-1 .logo{
